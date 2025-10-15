@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- Todo documento debe iniciar con doctype para indicarle al navergador el tipo de documento-->
+<html lang="es"> <!--Es la raiz del documento y el atributo lang define el idioma del contenido-->
+
+<head> <!--titulo de la pagina web-->
+    
+        <meta charset="iso-8859-1" /> <!--Corresponde a los metadatos del html invisible para usuarios pero importante para motores de busqueda, el atributo charset indica la codificación de caracteres que se utilizara-->
+        <meta name="description" content="Ejemplo de HTML5" />
+        <meta name="keywords" content="HTML5, CSS3, Javascript" /><!-- el atributo name especifica el tipo y content el valor-->
+        <title> Este texto es el título del documento </title> <!-- especifica el titulo del documento-->
+        <link rel="stylesheets" href="misestilos.css" ><!--vincula hojas de estilo externas-->
+</head>
+
+<body> <!--es la parte visible de un documento-->
+   
+   <p style="font-size: 20px;">Adriana Barrios</p>
+   <p> Adriana Barrios </p>
+    <header> <!--Información introductoria de una sección-->
+        <h1> Este es el titulo principal del sitio web</h1>
+    </header>
+    <nav> <!--Define la sección de la barra de navegación-->
+        <ul><!--es una lista desordenada-->
+            <li>principal</li><!--define cada elemento de la lista de la etiqueta ul-->
+            <li>fotos</li>
+            <li>videos</li>
+            <li>contactos</li>
+        </ul>
+    </nav>
+
+    <section><!--establece una seccion en un documento-->
+        <article><!--contiene la información que se desea publicar en la web-->
+            <header>
+                <hgroup> <!--agrupa el contenido de una etiqueta header-->
+                <h1>Titulo del mensaje uno</h1>
+                <h2> Subtitulo del mensaje uno</h2>
+                </hgroup>
+            </header>
+            Este es el texto de mi primer mensaje
+            <footer>
+                <p>comentarios (0) </p> <!--define un parrafo-->
+            </footer>
+        </article>
+        <article>
+              <header>
+                <hgroup> 
+                <h1>Titulo del mensaje dos</h1>
+                <h2> Subtitulo del mensaje dos</h2>
+                </hgroup>
+            </header>
+            Este es el texto de mi segundo mensaje
+            <footer>
+                <p>comentarios (0) </p> <!--define un parrafo-->
+            </footer>
+        </article>
+
+    </section>
+    <figure> <!--identifica contenido independiente como ilustaciones, fotos, videos-->
+        <img src="http://minkbooks.com/content/myimage.jpg"> <!--se utiliza para poner una imagen en una pagina HTML-->
+        <figcaption> <!--incluye el texto que acompaña a la imagen-->
+            Esta es la imagen del primer Mensaje
+        </figcaption>
+    </figure>
+    <aside> <!--diseño llamado barra lateral,su contenido debe estar relacionado indirectamente con el contenido circundante-->
+        <blockquote> Mensaje numero uno</blockquote> <!--especifica una sección que se cita de otra fuente-->
+        <blockquote> Mensaje numero dos</blockquote>
+    </aside>
+
+    <footer> <!--corresponde a la seccion de pie de pagina-->
+        Derechos Reservados & copy; 2010 - 2011
+    </footer>
+</body>
+
+</html>
