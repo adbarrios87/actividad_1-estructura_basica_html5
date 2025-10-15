@@ -6,18 +6,16 @@
         <meta charset="iso-8859-1" /> <!--Corresponde a los metadatos del html invisible para usuarios pero importante para motores de busqueda, el atributo charset indica la codificación de caracteres que se utilizara-->
         <meta name="description" content="Ejemplo de HTML5" />
         <meta name="keywords" content="HTML5, CSS3, Javascript" /><!-- el atributo name especifica el tipo y content el valor-->
-        <title> Este texto es el título del documento </title> <!-- especifica el titulo del documento-->
-        <link rel="stylesheets" href="misestilos.css" ><!--vincula hojas de estilo externas-->
+        <title> Este texto es el titulo del documento </title> <!-- especifica el titulo del documento-->
+    <link rel="stylesheet" href="src/css/misestilos.css"> <!--vincula hojas de estilo externas-->
 </head>
 
 <body> <!--es la parte visible de un documento-->
-   
-   <p style="font-size: 20px;">Adriana Barrios</p>
-   <p> Adriana Barrios </p>
-    <header> <!--Información introductoria de una sección-->
+   <div id="agrupar">
+    <header id="cabecera"> <!--Información introductoria de una sección-->
         <h1> Este es el titulo principal del sitio web</h1>
     </header>
-    <nav> <!--Define la sección de la barra de navegación-->
+    <nav id="menu"> <!--Define la sección de la barra de navegación-->
         <ul><!--es una lista desordenada-->
             <li>principal</li><!--define cada elemento de la lista de la etiqueta ul-->
             <li>fotos</li>
@@ -26,15 +24,23 @@
         </ul>
     </nav>
 
-    <section><!--establece una seccion en un documento-->
+    <section id="seccion"><!--establece una seccion en un documento-->
         <article><!--contiene la información que se desea publicar en la web-->
             <header>
                 <hgroup> <!--agrupa el contenido de una etiqueta header-->
                 <h1>Titulo del mensaje uno</h1>
                 <h2> Subtitulo del mensaje uno</h2>
                 </hgroup>
+                <time datetime="2025-09-14" pubdate> publicado 14-09-2025 <!--time define una hora específica, datetime se utiliza para traducir la hora a un formato legible por máquina para que los navegadores puedan ofrecer agregar recordatorios de fechas a través del calendario del usuario-->
+                </time>
             </header>
-            Este es el texto de mi primer mensaje
+                Este es el texto de mi primer mensaje
+            <figure> <!--identifica contenido independiente como ilustaciones, fotos, videos-->
+                    <img src="https://wallpapers.com/images/high/elsa-and-anna-pictures-g74jexzprdqyjxp3.webp" width=70% height=70%> <!--se utiliza para poner una imagen en una pagina HTML-->
+                    <figcaption> <!--incluye el texto que acompaña a la imagen-->
+                    Esta es la imagen del primer Mensaje
+                    </figcaption>
+            </figure>
             <footer>
                 <p>comentarios (0) </p> <!--define un parrafo-->
             </footer>
@@ -45,6 +51,8 @@
                 <h1>Titulo del mensaje dos</h1>
                 <h2> Subtitulo del mensaje dos</h2>
                 </hgroup>
+                <time datetime="2025-10-14" pubdate> publicado 14-10-2025 <!--time define una hora específica, datetime se utiliza para traducir la hora a un formato legible por máquina para que los navegadores puedan ofrecer agregar recordatorios de fechas a través del calendario del usuario-->
+                </time>
             </header>
             Este es el texto de mi segundo mensaje
             <footer>
@@ -53,20 +61,16 @@
         </article>
 
     </section>
-    <figure> <!--identifica contenido independiente como ilustaciones, fotos, videos-->
-        <img src="http://minkbooks.com/content/myimage.jpg"> <!--se utiliza para poner una imagen en una pagina HTML-->
-        <figcaption> <!--incluye el texto que acompaña a la imagen-->
-            Esta es la imagen del primer Mensaje
-        </figcaption>
-    </figure>
-    <aside> <!--diseño llamado barra lateral,su contenido debe estar relacionado indirectamente con el contenido circundante-->
+
+    <aside id="columna"> <!--diseño llamado barra lateral,su contenido debe estar relacionado indirectamente con el contenido circundante-->
         <blockquote> Mensaje numero uno</blockquote> <!--especifica una sección que se cita de otra fuente-->
         <blockquote> Mensaje numero dos</blockquote>
     </aside>
 
-    <footer> <!--corresponde a la seccion de pie de pagina-->
+    <footer id="pie"> <!--corresponde a la seccion de pie de pagina-->
         Derechos Reservados & copy; 2010 - 2011
     </footer>
+</div>
 </body>
 
 </html>
