@@ -69,10 +69,12 @@ body{
 }
 #columna{
     float: left;
-    width: 220px;
+    width: 260px;
     margin:20px 0px;
     padding: 20px;
-    background: #CCCCCC;
+    background-color: rgba(146, 107, 138,0.5);/*utilizar el formato rgba permite definir la opacidad del color*/
+    text-align: justify;
+    font:  11px verdana, sans-serif;
 }
 #pie{
     clear:both;
@@ -89,9 +91,11 @@ article{
 article footer{
     text-align: right;
 }
-
+figure{
+    text-align: center;
+}
 figcaption{
     font: italic 10px verdana, sans-serif;
     color: #595c72;
-    text-align: center;
+
 }
